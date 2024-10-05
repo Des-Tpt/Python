@@ -13,4 +13,16 @@ for i in range(n):
     else:
         print('* ' + '  ' * (i - 1) + '*')
 
-#Cái hình số 3 em chịu.
+def test(n3):
+    for i in range(n3):
+        if i == n3 // 2:
+            print("*"*n3)
+        else:
+            if i < n3 // 2 and i != 0:
+                print("*" + " " * (i-1) + "*")
+            elif i > n3 // 2 and i != n3 - 1:
+                print(" " * i + "*" + " " * (n3 - (i+2)) + "*")
+            else:
+                print(" " * i + "*")
+test(7)
+        
